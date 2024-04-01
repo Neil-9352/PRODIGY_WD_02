@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Nothing';
+    src: url('media/ndot-47-inspired-by-nothing.ttf') format('truetype');
+    /* You can specify additional font properties such as font-weight and font-style here if needed */
+}
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: coral;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #2f4858;
+}
+
+#navbar .navbar-text {
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    color: rgb(225, 225, 225);
+}
+
+.stopwatch-container {
+    background-color: white;
+    width: 40%;
+    min-width: 4rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.34);
+
+}
+
+.timer-display {
+    position: relative;
+    width: 92%;
+    background: #fff;
+    left: 4%;
+    /* font-family: monospace; */
+    font-family: 'Nothing';
+    font-size: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(65, 5, 145, 0.25);
+}
+
+.timer-buttons {
+    width: 90%;
+    margin: 3rem auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.timer-buttons button {
+    width: 5rem;
+    height: 2.1rem;
+    background-color: #b85e93;
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+}
+
+.timer-buttons button:nth-last-child(1) {
+    background-color: #e96479;
+}
+
+.timer-buttons button:nth-last-child(2) {
+    background-color: #46567c;
+}
+
+.timer-buttons button:nth-last-child(3) {
+    background-color: #0061b1;
+}
+
+.timer-buttons button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+#lap {
+    display: none;
+}
+
+.laps {
+    list-style: none;
+    /* width: 250px; */
+    height: auto;
+    overflow-y: scroll;
+    position: relative;
+    padding: 30px 0;
+    font-family: 'Nothing', monospace;
+}
+
+.laps::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+
+.lap-item {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.lap-item span {
+    font-family: 'Nothing';
+    font-size: 1.2rem;
+}
+
+.lap-clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clear-lap-button {
+    display: none;
+    position: fixed;
+    width: 5rem;
+    height: 2.1rem;
+    background-color: rgb(255, 217, 0);
+    border: none;
+    /* font-family: ; */
+    font-size: 1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+}
+
+.number {
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+.time-stamp {
+    font-size: 0.9rem;
+    font-family: monospace;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.display-none {
+    display: none;
+}
