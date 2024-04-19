@@ -165,3 +165,49 @@ body {
 .display-none {
     display: none;
 }
+
+@media screen and (max-width: 1100px) {
+    .stopwatch-container {
+        width: 60%;
+    }
+
+    .lap-item span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .timer-display {
+        font-size: 1.5rem;
+    }    
+}
+
+@media screen and (max-width: 590px) {
+    #navbar .navbar-text {
+        font-size: 1.5rem;
+    }
+
+    .timer-display {
+        font-size: 1rem;
+    }
+
+    .timer-buttons button {
+        width: 4rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .lap-item span {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .stopwatch-container {
+        width: 80%;
+    }
+
+    .timer-display {
+        padding: 2rem 0.5rem;
+    }
+}
